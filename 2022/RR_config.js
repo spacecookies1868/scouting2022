@@ -75,19 +75,9 @@ var config_data = `
         "title": "Uppoer Cargo Scored",
         "type":"counter"
       },
-      "Upper Cargo Missed": {
-        "code":"aum",
-        "title": "Uppoer Cargo Missed",
-        "type":"counter"
-      },
       "Lower Cargo Scored": {
         "code":"al",
         "title": "Lower Cargo Scored",
-        "type":"counter"
-      },
-      "Lower Cargo Missed": {
-        "code":"alm",
-        "title": "Lower Cargo Missed",
         "type":"counter"
       },
       "Auto Acquired Cargo": {
@@ -186,21 +176,21 @@ var config_data = `
       }
     },
     "postmatch": {
-      "Defense Rating": {
-        "code":"dr",
-        "title": "Defense Rating",
+      "Defended Against": {
+        "code":"da",
+        "title": "Defended Against",
         "type":"radio",
         "choices":{
-          "n":"Not Effective<br>",
-          "a":"Average<br>",
-          "v":"Very Effective<br>",
+          "n":"Affected in shooting<br>",
+          "a":"Affected in movement<br>",
+          "v":"Not Affected<br>",
           "x":"Not Observed"
         },
         "defaultValue":"x"
       },
-      "Defended Against": {
-        "code":"da",
-        "title": "Defended Against",
+      "Defense Rating": {
+        "code":"dr",
+        "title": "Defense Rating",
         "type":"radio",
         "choices":{
           "9":"Not Effective<br>",
