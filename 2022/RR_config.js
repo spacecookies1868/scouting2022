@@ -199,6 +199,19 @@ var config_data = `
           "y":"Not Attempted"
         },
         "defaultValue":"y"
+      },
+      "Stability": {
+        "code":"stab",
+        "title": "Stability",
+        "type":"radio",
+        "choices":{
+          "21":"Sturdy<br>",
+          "22":"Swinging<br>",
+          "23":"Barely On<br>",
+          "24":"On the ground<br>",
+          "25":"No Climb"
+        },
+        "defaultValue":"25"
       }
     },
     "postmatch": {
