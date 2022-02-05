@@ -123,11 +123,6 @@ var config_data = `
         "title": "Lower Cargo Missed",
         "type":"counter"
       },
-      "Was Defended": {
-        "code":"wd",
-        "title": "Was Defended",
-        "type":"bool"
-      },
       "Cargo Loading": {
         "code":"cl",
         "title": "Pick up Cargo where",
