@@ -200,10 +200,16 @@ var config_data = `
         },
         "defaultValue":"x"
       },
-      "Died": {
-        "code":"d",
-        "title": "Died",
-        "type":"bool"
+     "Connection Issues": {
+        "code":"ci",
+        "title": "Connection Issues",
+        "type":"radio",
+        "choices":{
+          "y":"Yes<br>",
+          "s":"Slight<br>",
+          "z":"None<br>",
+        },
+        "defaultValue":"z"
       },
       "Tipped": {
         "code":"to",
