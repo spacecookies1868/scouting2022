@@ -99,7 +99,7 @@ var config_data = `
       },
       "Upper Cargo Missed": {
         "code":"tm",
-        "title": "Uppoer Cargo Missed",
+        "title": "Upper Cargo Missed",
         "type":"counter"
       },
       "Lower Cargo Missed": {
