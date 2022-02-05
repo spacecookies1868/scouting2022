@@ -81,9 +81,14 @@ var config_data = `
         "title": "Lower Cargo Scored",
         "type":"counter"
       },
-      "Auto Aquired Cargo": {
+      "Auto Acquired Cargo": {
         "code":"ac",
         "title": "Picked up more cargo?",
+        "type":"bool"
+      }
+      "Auto path or something idk": {
+        "code":"az",
+        "title": "Auto path or something idk?",
         "type":"bool"
       }
     },
