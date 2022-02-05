@@ -9,7 +9,8 @@ var config_data = `
         "type":"scouter",
         "size":5,
         "maxSize":5,
-        "required":"false"
+        "required":"false",
+        "disabled":"true"
       },
       "Event":{
         "code":"e",
@@ -29,14 +30,16 @@ var config_data = `
           "f":"Final"
         },
         "defaultValue":"qm",
-        "required":"false"
+        "required":"false",
+        "disabled":"true"
       },
       "Match #":{
         "code":"m",
         "type":"match",
         "min":1,
         "max":100,
-        "required":"false"
+        "required":"false",
+        "disabled":"true"
       },
      "Robot": {
         "code":"r",
@@ -49,7 +52,8 @@ var config_data = `
           "r3":"Red-3",
           "b3":"Blue-3"
         },
-        "required":"false"
+        "required":"false",
+        "disabled":"true"
       },
       "Team #": {
         "code":"t",
@@ -75,9 +79,19 @@ var config_data = `
         "title": "Uppoer Cargo Scored",
         "type":"counter"
       },
+      "Upper Cargo Missed": {
+        "code":"aum",
+        "title": "Uppoer Cargo Missed",
+        "type":"counter"
+      },
       "Lower Cargo Scored": {
         "code":"al",
         "title": "Lower Cargo Scored",
+        "type":"counter"
+      },
+      "Lower Cargo Missed": {
+        "code":"alm",
+        "title": "Lower Cargo Missed",
         "type":"counter"
       },
       "Auto Acquired Cargo": {
@@ -176,21 +190,21 @@ var config_data = `
       }
     },
     "postmatch": {
-      "Defended Against": {
-        "code":"da",
-        "title": "Defended Against",
+      "Defense Rating": {
+        "code":"dr",
+        "title": "Defense Rating",
         "type":"radio",
         "choices":{
-          "n":"Affected in shooting<br>",
-          "a":"Affected in movement<br>",
-          "v":"Not Affected<br>",
+          "n":"Not Effective<br>",
+          "a":"Average<br>",
+          "v":"Very Effective<br>",
           "x":"Not Observed"
         },
         "defaultValue":"x"
       },
-      "Defense Rating": {
-        "code":"dr",
-        "title": "Defense Rating",
+      "Defended Against": {
+        "code":"da",
+        "title": "Defended Against",
         "type":"radio",
         "choices":{
           "9":"Not Effective<br>",
