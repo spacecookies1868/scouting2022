@@ -86,12 +86,6 @@ var config_data = `
         "title": "Picked up more cargo?",
         "type":"bool"
       }
-       "Auto Path": {
-        "code":"ap",
-        "title": "Auto PAth",
-        "type":"field_image",
-        "filename":"2022/field_image.png"
-      }
     },
     "teleop": {
       "Upper Cargo Scored": {
