@@ -229,18 +229,6 @@ var config_data = `
         },
         "defaultValue":"x"
       },
-      "Intake Location": {
-        "code":"il",
-        "title": "Intake Location",
-        "type":"radio",
-        "choices":{
-          "15":"Human Player<br>",
-          "16":"Ground<br>",
-          "17":"Both<br>",
-          "x":"Not Observed"
-        },
-        "defaultValue":"x"
-      },
       "Intake Accuracy": {
         "code":"ia",
         "title": "Intake Accuracy",
