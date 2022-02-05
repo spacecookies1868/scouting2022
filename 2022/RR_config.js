@@ -233,14 +233,11 @@ var config_data = `
         "type":"radio",
         "choices":{
           "9":"Not Effective<br>",
-          "10":"Got in the way<br>",
-          "11":"Pushed robot around a lot<br>",
-          "12":"Pushed robot around slightly<br>",
-          "13":"Blocked most of shooting<br>",
-          "14":"Blocked some of shooting<br>",
-          "x":"Not Observed"
+          "10":"Slowed robot down<br>",
+          "11":"Pushed robot around a lot, affected shooting<br>",
+          "12":"No defense"
         },
-        "defaultValue":"x"
+        "defaultValue":"12"
       },
       "Intake Accuracy": {
         "code":"ia",
