@@ -105,6 +105,11 @@ var config_data = `
         "title": "Auto Path",
         "type":"field_image",
         "filename":"2022/field_image.png"
+      },
+      "Human Player Shot": {
+        "code":"hp",
+        "title": "Human Player Shot",
+        "type":"counter"
       }
     },
     "teleop": {
