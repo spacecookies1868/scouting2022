@@ -9,7 +9,7 @@ var config_data = `
         "type":"scouter",
         "size":5,
         "maxSize":5,
-        "required":"true"
+        "required":"false"
       },
       "Event":{
         "code":"e",
@@ -29,14 +29,14 @@ var config_data = `
           "f":"Final"
         },
         "defaultValue":"qm",
-        "required":"true"
+        "required":"false"
       },
       "Match #":{
         "code":"m",
         "type":"match",
         "min":1,
         "max":100,
-        "required":"true"
+        "required":"false"
       },
      "Robot": {
         "code":"r",
@@ -49,7 +49,7 @@ var config_data = `
           "r3":"Red-3",
           "b3":"Blue-3"
         },
-        "required":"true"
+        "required":"false"
       },
       "Team #": {
         "code":"t",
