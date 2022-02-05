@@ -84,12 +84,6 @@ var config_data = `
         "code":"ac",
         "title": "Picked up more cargo?",
         "type":"bool"
-      },
-      "Auto Path": {
-        "code":"ap",
-        "title": "Auto Path",
-        "type":"field_image",
-        "filename":"2022/field_image.png"
       }
     },
     "teleop": {
@@ -205,6 +199,30 @@ var config_data = `
           "12":"Pushed robot around slightly<br>",
           "13":"Blocked most of shooting<br>",
           "14":"Blocked some of shooting<br>",
+          "x":"Not Observed"
+        },
+        "defaultValue":"x"
+      },
+      "Intake Location": {
+        "code":"il",
+        "title": "Intake Location",
+        "type":"radio",
+        "choices":{
+          "15":"Human Player<br>",
+          "16":"Ground<br>",
+          "17":"Both<br>",
+          "x":"Not Observed"
+        },
+        "defaultValue":"x"
+      },
+      "Intake Accuracy": {
+        "code":"ia",
+        "title": "Intake Accuracy",
+        "type":"radio",
+        "choices":{
+          "18":"Half of the time<br>",
+          "19":"Most of the time<br>",
+          "20":"All of the time<br>",
           "x":"Not Observed"
         },
         "defaultValue":"x"
