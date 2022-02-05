@@ -205,7 +205,7 @@ var config_data = `
         "title": "Connection Issues",
         "type":"radio",
         "choices":{
-          "y":"Yes<br>",
+          "w":"Yes<br>",
           "s":"Slight<br>",
           "z":"None<br>",
         },
