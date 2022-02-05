@@ -223,7 +223,7 @@ var config_data = `
           "n":"Affected in shooting<br>",
           "a":"Affected in movement<br>",
           "v":"Not Affected<br>",
-          "x":"Not Observed"
+          "x":"Did not get defended"
         },
         "defaultValue":"x"
       },
@@ -247,7 +247,7 @@ var config_data = `
           "18":"Half of the time<br>",
           "19":"Most of the time<br>",
           "20":"All of the time<br>",
-          "x":"Not Observed"
+          "x":"Did not intake"
         },
         "defaultValue":"x"
       },
