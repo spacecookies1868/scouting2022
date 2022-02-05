@@ -1,6 +1,6 @@
 var config_data = `
 {
-  "title":"Scouting PASS 2022",
+  "title":"Scouting App 2022",
   "page_title":"Rapid React",
   "elements":{
     "prematch": {
@@ -22,7 +22,6 @@ var config_data = `
         "code":"l",
         "type":"level",
         "choices":{
-          "t":"phone<br>",
           "p":"Practice<br>",
           "qm":"Quals<br>",
           "qf":"Quarter-Final<br>",
@@ -203,7 +202,7 @@ var config_data = `
         "title": "Comments",
         "type":"text",
         "size":15,
-        "maxSize":50
+        "maxSize":80
       }
     }
   }
