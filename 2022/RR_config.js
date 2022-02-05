@@ -129,11 +129,6 @@ var config_data = `
         "title": "Shooting Spot",
         "type":"field_image",
         "filename":"2022/field_image.png"
-      },
-       "happy": {
-        "code":"hy",
-        "title": "happy",
-        "type":"bool"
       }
     },
     "endgame": {
