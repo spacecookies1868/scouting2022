@@ -22,7 +22,7 @@ var config_data = `
         "code":"l",
         "type":"level",
         "choices":{
-          "t":"colors<br>",
+          "t":"phone<br>",
           "p":"Practice<br>",
           "qm":"Quals<br>",
           "qf":"Quarter-Final<br>",
