@@ -208,14 +208,14 @@ var config_data = `
         },
         "defaultValue":"x"
       },
-      "Defense Rating": {
+      "Own Defense": {
         "code":"dr",
-        "title": "Defense Rating",
+        "title": "Own Defense",
         "type":"radio",
         "choices":{
-          "9":"Not Effective<br>",
-          "10":"Slowed robot down<br>",
-          "11":"Pushed robot around a lot, affected shooting<br>",
+          "9":"Slowed robot down<br>",
+          "10":"Pushed robot around a lot, affected shooting<br>",
+          "11":"Not Effective<br>",
           "12":"No defense"
         },
         "defaultValue":"12"
@@ -225,9 +225,9 @@ var config_data = `
         "title": "Intake Accuracy",
         "type":"radio",
         "choices":{
-          "18":"Half of the time<br>",
-          "19":"Most of the time<br>",
-          "20":"All of the time<br>",
+          "18":"Touch it, own it<br>",
+          "19":"Missed a few<br>",
+          "20":"Struggled<br>",
           "x":"Did not intake"
         },
         "defaultValue":"x"
@@ -237,7 +237,7 @@ var config_data = `
         "title": "Connection Issues",
         "type":"radio",
         "choices":{
-          "w":"Yes<br>",
+          "w":"Signficant<br>",
           "s":"Slight<br>",
           "z":"None"
         },
@@ -250,7 +250,7 @@ var config_data = `
       },
       "Card Foul": {
         "code":"cf",
-        "title": "Yellow/Red Card",
+        "title": "Suspected Foul",
         "type":"bool"
       },
       "Comments": {
@@ -258,7 +258,7 @@ var config_data = `
         "title": "Comments",
         "type":"text",
         "size":15,
-        "maxSize":80
+        "maxSize":100
       }
     }
   }
