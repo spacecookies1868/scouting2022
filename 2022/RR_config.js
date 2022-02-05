@@ -207,7 +207,7 @@ var config_data = `
         "choices":{
           "w":"Yes<br>",
           "s":"Slight<br>",
-          "z":"None",
+          "z":"None"
         },
         "defaultValue":"z"
       },
