@@ -155,6 +155,11 @@ var config_data = `
         "code":"cn",
         "title": "# of alliance bots climbed",
         "type":"counter"
+      },
+       "Tandem Climb": {
+        "code":"be",
+        "title": "Tandem Climb",
+        "type":"bool"
       }
     },
     "postmatch": {
