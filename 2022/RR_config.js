@@ -158,20 +158,6 @@ var config_data = `
       }
     },
     "endgame": {
-      "Climb": {
-        "code":"c",
-        "title": "Climb",
-        "type":"radio",
-        "choices":{
-          "1":"Low<br>",
-          "2":"Mid<br>",
-          "3":"High<br>",
-          "4":"Traversal<br>",
-          "f":"Attempted but Failed<br>",
-          "x":"Not Attempted"
-        },
-        "defaultValue":"x"
-      },
       "Started Climb before Endgame": {
         "code":"be",
         "title": "Started climb before EndGame",
@@ -181,11 +167,6 @@ var config_data = `
         "code":"be",
         "title": "Tandem Climb",
         "type":"bool"
-      },
-       "Num of Robots Climbed": {
-        "code":"cn",
-        "title": "# of alliance bots climbed",
-        "type":"counter"
       },
       "Highest Attempted Climb": {
         "code":"hac",
@@ -208,7 +189,7 @@ var config_data = `
           "21":"Sturdy<br>",
           "22":"Swinging<br>",
           "23":"Barely On<br>",
-          "24":"On the ground<br>",
+          "24":"Failed, on the ground in pieces<br>",
           "25":"No Climb"
         },
         "defaultValue":"25"
