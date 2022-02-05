@@ -98,6 +98,12 @@ var config_data = `
         "code":"ac",
         "title": "Picked up more cargo?",
         "type":"bool"
+      },
+      "Auto Path": {
+        "code":"ap",
+        "title": "Auto Path",
+        "type":"field_image",
+        "filename":"2022/field_image.png"
       }
     },
     "teleop": {
