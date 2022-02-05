@@ -1,9 +1,9 @@
 @font-face {
-    font-family: 'CooperHewitt-Medium';
+    font-family: 'Alexis';
     font-style: normal;
     font-weight: normal;
-    src: local('CooperHewitt-Medium.otf'), url('../fonts/CooperHewitt-Medium.otf') format('otf');
-    /*src: url("../fonts/alexisv3.ttf") format('truetype');*/
+    src: local('Alexis'), url('../fonts/alex.woff') format('woff');
+    src: url("../fonts/alexisv3.ttf") format('truetype');
 }
 
 html, body{
@@ -63,7 +63,7 @@ html, body{
 }
 
 h1{
-    font-family: CooperHewitt-Medium;
+    font-family: Alexis;
     text-align: center;
     border-style: groove;
     border-color: white; 
@@ -71,7 +71,7 @@ h1{
 }
 
 h2{
-    font-family: CooperHewitt-Medium;
+    font-family: Alexis;
     text-align: center;
 }
 
@@ -98,13 +98,13 @@ h2{
 }
 
 h1 .odd {
-    font-family: CooperHewitt-Medium;
+    font-family: Alexis;
     text-align: center;
     color: #0AB4EC;
 }
 
 h1 .even {
-    font-family: CooperHewitt-Medium;
+    font-family: Alexis;
     text-align: center;
     color: #42B333;
 }
