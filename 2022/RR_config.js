@@ -166,13 +166,13 @@ var config_data = `
         "title": "Highest Attempted Climb",
         "type":"radio",
         "choices":{
-          "1":"Low<br>",
-          "2":"Mid<br>",
-          "3":"High<br>",
-          "4":"Traversal<br>",
-          "x":"Not Attempted"
+          "5":"Low<br>",
+          "6":"Mid<br>",
+          "7":"High<br>",
+          "8":"Traversal<br>",
+          "y":"Not Attempted"
         },
-        "defaultValue":"x"
+        "defaultValue":"y"
       }
     },
     "postmatch": {
