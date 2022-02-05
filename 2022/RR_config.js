@@ -86,11 +86,6 @@ var config_data = `
         "title": "Picked up more cargo?",
         "type":"bool"
       }
-      "Auto path or something idk": {
-        "code":"az",
-        "title": "Auto path or something idk?",
-        "type":"bool"
-      }
     },
     "teleop": {
       "Upper Cargo Scored": {
