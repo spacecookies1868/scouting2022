@@ -72,17 +72,17 @@ var config_data = `
       },
       "Upper Cargo Scored": {
         "code":"au",
-        "title": "Uppoer Cargo Scored",
+        "title": "-- Upper Cargo Scored",
         "type":"counter"
       },
       "Upper Cargo Missed": {
         "code":"aum",
-        "title": "Uppoer Cargo Missed",
+        "title": "Upper Cargo Missed",
         "type":"counter"
       },
       "Lower Cargo Scored": {
         "code":"al",
-        "title": "Lower Cargo Scored",
+        "title": "-- Lower Cargo Scored",
         "type":"counter"
       },
       "Lower Cargo Missed": {
@@ -90,10 +90,21 @@ var config_data = `
         "title": "Lower Cargo Missed",
         "type":"counter"
       },
-      "Auto Acquired Cargo": {
-        "code":"ac",
-        "title": "Picked up more cargo?",
-        "type":"bool"
+      "Cargo Intake Success": {
+        "code":"cis",
+        "title": "-- Cargo Intake Success",
+        "type":"counter"
+      },
+      "Cargo Intake Missed": {
+        "code":"cim",
+        "title": "Cargo Intake Missed",
+        "type":"counter"
+      },
+      "Auto Path": {
+        "code":"ap",
+        "title": "Auto Path",
+        "type":"field_image",
+        "filename":"2022/field_image.png"
       }
     },
     "teleop": {
