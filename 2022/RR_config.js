@@ -176,9 +176,9 @@ var config_data = `
       }
     },
     "postmatch": {
-      "Driver Skill": {
-        "code":"ds",
-        "title": "Driver Skill",
+      "Defense Rating": {
+        "code":"dr",
+        "title": "Defense Rating",
         "type":"radio",
         "choices":{
           "n":"Not Effective<br>",
@@ -188,14 +188,17 @@ var config_data = `
         },
         "defaultValue":"x"
       },
-      "Defense Rating": {
-        "code":"dr",
-        "title": "Defense Rating",
+      "Defended Against": {
+        "code":"da",
+        "title": "Defended Against",
         "type":"radio",
         "choices":{
-          "n":"Not Effective<br>",
-          "a":"Average<br>",
-          "v":"Very Effective<br>",
+          "9":"Not Effective<br>",
+          "10":"Got in the way<br>",
+          "11":"Pushed robot around a lot<br>",
+          "12":"Pushed robot around slightly<br>",
+          "13":"Blocked most of shooting<br>",
+          "14":"Blocked some of shooting<br>",
           "x":"Not Observed"
         },
         "defaultValue":"x"
