@@ -151,15 +151,15 @@ var config_data = `
         "title": "Started climb before EndGame",
         "type":"bool"
       },
-      "Num of Robots Climbed": {
-        "code":"cn",
-        "title": "# of alliance bots climbed",
-        "type":"counter"
-      },
-       "Tandem Climb": {
+      "Tandem Climb": {
         "code":"be",
         "title": "Tandem Climb",
         "type":"bool"
+      },
+       "Num of Robots Climbed": {
+        "code":"cn",
+        "title": "# of alliance bots climbed",
+        "type":"counter"
       }
     },
     "postmatch": {
