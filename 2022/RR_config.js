@@ -100,16 +100,16 @@ var config_data = `
         "title": "Cargo Intake Missed",
         "type":"counter"
       },
-      "Auto Path": {
+       "Human Player Shot": {
+        "code":"hp",
+        "title": "Human Player Shot",
+        "type":"counter"
+      },
+       "Auto Path": {
         "code":"ap",
         "title": "Auto Path",
         "type":"field_image",
         "filename":"2022/field_image.png"
-      },
-      "Human Player Shot": {
-        "code":"hp",
-        "title": "Human Player Shot",
-        "type":"counter"
       }
     },
     "teleop": {
