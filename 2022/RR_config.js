@@ -90,16 +90,6 @@ var config_data = `
         "title": "Lower Cargo Missed",
         "type":"counter"
       },
-      "Cargo Intake Success": {
-        "code":"cis",
-        "title": "-- Cargo Intake Success",
-        "type":"counter"
-      },
-      "Cargo Intake Missed": {
-        "code":"cim",
-        "title": "Cargo Intake Missed",
-        "type":"counter"
-      },
        "Human Player Shot": {
         "code":"hp",
         "title": "Human Player Shot",
