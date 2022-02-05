@@ -160,6 +160,19 @@ var config_data = `
         "code":"cn",
         "title": "# of alliance bots climbed",
         "type":"counter"
+      },
+      "Highest Attempted Climb": {
+        "code":"hac",
+        "title": "Highest Attempted Climb",
+        "type":"radio",
+        "choices":{
+          "1":"Low<br>",
+          "2":"Mid<br>",
+          "3":"High<br>",
+          "4":"Traversal<br>",
+          "x":"Not Attempted"
+        },
+        "defaultValue":"x"
       }
     },
     "postmatch": {
