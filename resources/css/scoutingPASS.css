@@ -2,8 +2,7 @@
     font-family: 'Alexis';
     font-style: normal;
     font-weight: normal;
-    src: local('Alexis'), url('../fonts/alex.woff') format('woff');
-    src: url("../fonts/alexisv3.ttf") format('truetype');
+    src: url(sansation_light.woff);
 }
 
 html, body{
