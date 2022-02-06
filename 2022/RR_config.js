@@ -70,9 +70,9 @@ var config_data = `
         "title": "Taxied?",
         "type":"bool"
       },
-      "Upper Cargo Scored": {
+      "-- Upper Cargo Scored": {
         "code":"au",
-        "title": "-- Upper Cargo Scored",
+        "title": "Upper Cargo Scored",
         "type":"counter"
       },
       "Upper Cargo Missed": {
@@ -80,7 +80,7 @@ var config_data = `
         "title": "Upper Cargo Missed",
         "type":"counter"
       },
-      "Lower Cargo Scored": {
+      "-- Lower Cargo Scored": {
         "code":"al",
         "title": "-- Lower Cargo Scored",
         "type":"counter"
@@ -103,7 +103,7 @@ var config_data = `
       }
     },
     "teleop": {
-      "Upper Cargo Scored": {
+      "-- Upper Cargo Scored": {
         "code":"tu",
         "title": "Upper Cargo Scored",
         "type":"counter"
@@ -113,7 +113,7 @@ var config_data = `
         "title": "Upper Cargo Missed",
         "type":"counter"
       },
-      "Lower Cargo Scored": {
+      "-- Lower Cargo Scored": {
         "code":"tl",
         "title": "Lower Cargo Scored",
         "type":"counter"
@@ -233,9 +233,9 @@ var config_data = `
         "title": "Tipped Over",
         "type":"bool"
       },
-      "Card Foul": {
+      "Suspected Foul": {
         "code":"cf",
-        "title": "Suspected Foul",
+        "title": "Card Foul",
         "type":"bool"
       },
       "Comments": {
