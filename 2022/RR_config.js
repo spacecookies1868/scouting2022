@@ -105,17 +105,17 @@ var config_data = `
     "teleop": {
       "Upper Cargo Scored": {
         "code":"tu",
-        "title": "Uppoer Cargo Scored",
-        "type":"counter"
-      },
-      "Lower Cargo Scored": {
-        "code":"tl",
-        "title": "Lower Cargo Scored",
+        "title": "Upper Cargo Scored",
         "type":"counter"
       },
       "Upper Cargo Missed": {
         "code":"tm",
         "title": "Upper Cargo Missed",
+        "type":"counter"
+      },
+      "Lower Cargo Scored": {
+        "code":"tl",
+        "title": "Lower Cargo Scored",
         "type":"counter"
       },
       "Lower Cargo Missed": {
