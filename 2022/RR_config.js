@@ -186,8 +186,8 @@ var config_data = `
         "title": "Defended Against",
         "type":"radio",
         "choices":{
-          "n":"Affected in shooting<br>",
-          "a":"Affected in movement<br>",
+          "n":"Shooting was significantly affected<br>",
+          "a":"Was slowed down<br>",
           "v":"Not Affected<br>",
           "x":"Did not get defended"
         },
@@ -198,8 +198,8 @@ var config_data = `
         "title": "Own Defense",
         "type":"radio",
         "choices":{
-          "9":"Slowed robot down<br>",
-          "10":"Pushed robot around a lot, affected shooting<br>",
+          "9":"Pushed robot around a lot, affected shooting<br>",
+          "10":"Slowed robot down<br>",
           "11":"Not Effective<br>",
           "12":"No defense"
         },
@@ -222,8 +222,8 @@ var config_data = `
         "title": "Connection Issues",
         "type":"radio",
         "choices":{
-          "w":"Signficant<br>",
-          "s":"Slight<br>",
+          "w":"Signficant (>30 sec) <br>",
+          "s":"Slight (<10 sec) <br>",
           "z":"None"
         },
         "defaultValue":"z"
@@ -243,7 +243,7 @@ var config_data = `
         "title": "Comments",
         "type":"text",
         "size":15,
-        "maxSize":100
+        "maxSize":200
       }
     }
   }
