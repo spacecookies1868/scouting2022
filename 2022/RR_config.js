@@ -181,9 +181,9 @@ var config_data = `
       }
     },
     "postmatch": {
-      "Defended Against": {
+      "Avoiding Opponent Defense": {
         "code":"da",
-        "title": "Defended Against",
+        "title": "Avoiding Opponent Defense",
         "type":"radio",
         "choices":{
           "n":"Shooting was significantly affected<br>",
@@ -193,9 +193,9 @@ var config_data = `
         },
         "defaultValue":"x"
       },
-      "Own Defense": {
+      "Defense Skill": {
         "code":"dr",
-        "title": "Own Defense",
+        "title": "Defense Skill",
         "type":"radio",
         "choices":{
           "9":"Pushed robot around a lot, affected shooting<br>",
@@ -205,9 +205,9 @@ var config_data = `
         },
         "defaultValue":"12"
       },
-      "Intake Accuracy": {
-        "code":"ia",
-        "title": "Intake Accuracy",
+      "Intake Skill": {
+        "code":"is",
+        "title": "Intake Skill",
         "type":"radio",
         "choices":{
           "18":"Touch it, own it<br>",
