@@ -149,7 +149,7 @@ var config_data = `
         "type":"bool"
       },
       "Tandem Climb": {
-        "code":"be",
+        "code":"tc",
         "title": "Tandem Climb",
         "type":"bool"
       },
