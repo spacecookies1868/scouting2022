@@ -70,7 +70,7 @@ var config_data = `
         "title": "Taxied?",
         "type":"bool"
       },
-      "-- Upper Cargo Scored": {
+      "- Upper Cargo Scored": {
         "code":"au",
         "title": "Upper Cargo Scored",
         "type":"counter"
@@ -80,7 +80,7 @@ var config_data = `
         "title": "Upper Cargo Missed",
         "type":"counter"
       },
-      "-- Lower Cargo Scored": {
+      "- Lower Cargo Scored": {
         "code":"al",
         "title": "-- Lower Cargo Scored",
         "type":"counter"
@@ -103,7 +103,7 @@ var config_data = `
       }
     },
     "teleop": {
-      "-- Upper Cargo Scored": {
+      "- Upper Cargo Scored": {
         "code":"tu",
         "title": "Upper Cargo Scored",
         "type":"counter"
@@ -113,7 +113,7 @@ var config_data = `
         "title": "Upper Cargo Missed",
         "type":"counter"
       },
-      "-- Lower Cargo Scored": {
+      "- Lower Cargo Scored": {
         "code":"tl",
         "title": "Lower Cargo Scored",
         "type":"counter"
@@ -128,8 +128,8 @@ var config_data = `
         "title": "Pick up Cargo where",
         "type":"radio",
         "choices":{
-          "h":"Human Player<br>",
           "g":"Ground<br>",
+          "h":"Human Player<br>",
           "b":"Both<br>",
           "x":"Not Attempted"
         },
@@ -153,9 +153,9 @@ var config_data = `
         "title": "Tandem Climb",
         "type":"bool"
       },
-      "Highest Attempted Climb": {
+      "Highest *Attempted* Climb": {
         "code":"hac",
-        "title": "Highest Attempted Climb",
+        "title": "Highest *Attempted* Climb",
         "type":"radio",
         "choices":{
           "5":"Low<br>",
