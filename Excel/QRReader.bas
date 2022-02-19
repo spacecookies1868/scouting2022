@@ -53,7 +53,7 @@ Sub saveData(inp As String)
     mapper.Add "cf", "suspectedFouls"
     mapper.Add "co", "comments"
     mapper.Add "as", "autoStartPosition"
-    mapper.Add "at", "auton"
+    mapper.Add "at", "taxied"
     mapper.Add "au", "upperCargoScored"
     mapper.Add "aum", "upperCargoMissed"
     mapper.Add "al", "lowerCargoScored"
