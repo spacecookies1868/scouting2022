@@ -133,7 +133,7 @@ var config_data = `
           "b":"Both<br>",
           "x":"Not Attempted"
         },
-        "defaultValue":"x"
+        "defaultValue":"g"
       },
       "Shooting Spot": {
         "code":"ss",
@@ -158,26 +158,26 @@ var config_data = `
         "title": "Highest *Attempted* Climb",
         "type":"radio",
         "choices":{
-          "5":"Low<br>",
-          "6":"Mid<br>",
-          "7":"High<br>",
-          "8":"Traversal<br>",
-          "y":"Not Attempted"
+          "Low":"Low<br>",
+          "Mid":"Mid<br>",
+          "High":"High<br>",
+          "Traversal":"Traversal<br>",
+          "n/a":"Not Attempted"
         },
-        "defaultValue":"y"
+        "defaultValue":"n/a"
       },
       "Stability": {
         "code":"stab",
         "title": "Stability",
         "type":"radio",
         "choices":{
-          "21":"Sturdy<br>",
-          "22":"Swinging<br>",
-          "23":"Barely On<br>",
-          "24":"Failed, on the ground in pieces<br>",
-          "25":"No Climb"
+          "Sturdy":"Sturdy<br>",
+          "Swinging":"Swinging<br>",
+          "Barely On":"Barely On<br>",
+          "Failed":"Failed, on the ground in pieces<br>",
+          "n/a":"No Climb"
         },
-        "defaultValue":"25"
+        "defaultValue":"n/a"
       }
     },
     "postmatch": {
@@ -186,47 +186,47 @@ var config_data = `
         "title": "Avoiding Opponent Defense",
         "type":"radio",
         "choices":{
-          "n":"Shooting was significantly affected<br>",
-          "a":"Was slowed down<br>",
-          "v":"Not Affected<br>",
-          "x":"Did not get defended"
+          "Best":"Shooting was significantly affected<br>",
+          "Good":"Was slowed down<br>",
+          "Bad Affected":"Not Affected<br>",
+          "n/a":"Did not get defended"
         },
-        "defaultValue":"x"
+        "defaultValue":"n/a"
       },
       "Defense Skill": {
         "code":"dr",
         "title": "Defense Skill",
         "type":"radio",
         "choices":{
-          "9":"Pushed robot around a lot, affected shooting<br>",
-          "10":"Slowed robot down<br>",
-          "11":"Not Effective<br>",
-          "12":"No defense"
+          "Best":"Pushed robot around a lot, affected shooting<br>",
+          "Good":"Slowed robot down<br>",
+          "Bad":"Not Effective<br>",
+          "n/a":"No defense"
         },
-        "defaultValue":"12"
+        "defaultValue":"n/a"
       },
       "Intake Skill": {
         "code":"is",
         "title": "Intake Skill",
         "type":"radio",
         "choices":{
-          "18":"Touch it, own it<br>",
-          "19":"Missed a few<br>",
-          "20":"Struggled<br>",
-          "x":"Did not intake"
+          "Best":"Touch it, own it<br>",
+          "Good":"Missed a few<br>",
+          "Bad":"Struggled<br>",
+          "n/a":"Did not intake"
         },
-        "defaultValue":"x"
+        "defaultValue":"n/a"
       },
      "Connection Issues": {
         "code":"ci",
         "title": "Connection Issues",
         "type":"radio",
         "choices":{
-          "w":"Signficant (>30 sec) <br>",
-          "s":"Slight (<10 sec) <br>",
-          "z":"None"
+          "Significant":"Signficant (>30 sec) <br>",
+          "Slight":"Slight (<10 sec) <br>",
+          "n/a":"None"
         },
-        "defaultValue":"z"
+        "defaultValue":"n/a"
       },
       "Tipped": {
         "code":"to",
