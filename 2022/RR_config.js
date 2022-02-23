@@ -189,7 +189,7 @@ var config_data = `
         "title": "Avoiding Opponent Defense",
         "type":"radio",
         "choices":{
-          "Both Shooting and Intaking Affected":"Both shooting and intaking were affected<br>",
+          "Both Shooting and Intaking Affected":"Both their shooting and intaking were affected<br>",
           "Intaking Affected":"Intaking was affected<br>",
           "Shooting Affected":"Shooting was affected<br>",
           "Slowed Down":"Was just generally slowed down<br>",
@@ -203,9 +203,9 @@ var config_data = `
         "title": "Defense Skill",
         "type":"radio",
         "choices":{
-          "Affected Both Shooting and Intaking":"Pushed robot around, impeded both their intaking and shooting<br>",
-          "Affected Intake":"Significantly affected their intake cycles<br>",
-          "Affected Shooting":"Affected their shooting accuracy<br>",
+          "Affected Both Shooting and Intaking":"Impeded opponent intaking and shooting<br>",
+          "Affected Intake":"Significantly affected intake cycles<br>",
+          "Affected Shooting":"Affected shooting accuracy<br>",
           "Slowed Them":"Just slowed them down<br>",
           "Ineffective":"Was ineffective<br>",
           "n/a":"Did not play defense"
