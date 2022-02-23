@@ -65,11 +65,6 @@ var config_data = `
       }
     },
     "auton": {
-      "Taxi": {
-        "code":"at",
-        "title": "Taxied?",
-        "type":"bool"
-      },
       "- Upper Cargo Scored": {
         "code":"au",
         "title": "Upper Cargo Scored",
@@ -100,6 +95,11 @@ var config_data = `
         "title": "Auto Path",
         "type":"field_image",
         "filename":"2022/field_image.png"
+      },
+       "Taxi": {
+        "code":"at",
+        "title": "Taxied?",
+        "type":"bool"
       }
     },
     "teleop": {
