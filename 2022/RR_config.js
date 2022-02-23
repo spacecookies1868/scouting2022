@@ -162,7 +162,7 @@ var config_data = `
           "Mid":"Mid<br>",
           "High":"High<br>",
           "Traversal":"Traversal<br>",
-          "n/a":"Not Attempted"
+          "n/a":"Not attempted"
         },
         "defaultValue":"n/a"
       },
@@ -176,9 +176,9 @@ var config_data = `
           "Wild Swing":"Wild swing<br>",
           "Hit Driver Station":"Hit driver station wall<br>",
           "Missed Rung":"Missed the next rung but didn't fall<br>",
-          "Fell Off Rung":"Fell off the rung<br>",
           "Fell Off While Transitioning":"Fell off the rung when transitioning to higher rung<br>",
-          "n/a":"Not Attempted"
+          "Fell Off Rung":"Fell off the rung<br>",
+          "n/a":"Not attempted"
         },
         "defaultValue":"n/a"
       }
@@ -190,8 +190,9 @@ var config_data = `
         "type":"radio",
         "choices":{
           "Both Shooting and Intaking Affected":"Both shooting and intaking were affected<br>",
-          "Shooting Affected":"Shooting was affected<br>",
           "Intaking Affected":"Intaking was affected<br>",
+          "Shooting Affected":"Shooting was affected<br>",
+          "Slowed Down":"Was just generally slowed down<br>",
           "Not Affected":"Not affected, cycles were unchanged<br>",
           "n/a":"Did not get defended"
         },
@@ -199,16 +200,29 @@ var config_data = `
       },
       "Defense Skill": {
         "code":"dr",
-        "title": "Defense Skill",
+        "title": "Own Defense Skill",
         "type":"radio",
         "choices":{
-          "Affected Intake":"Pushed robot around, affected their intaking<br>",
+          "Affected Both Shooting and Intaking":"Pushed robot around, impeded both their intaking and shooting<br>",
+          "Affected Intake":"Significantly affected their intake cycles<br>",
           "Affected Shooting":"Affected their shooting accuracy<br>",
-          "Slowed Them":"Slowed them down<br>",
+          "Slowed Them":"Just slowed them down<br>",
           "Ineffective":"Was ineffective<br>",
           "n/a":"Did not play defense"
         },
         "defaultValue":"n/a"
+      },
+       "Robot Defended": {
+        "code":"Robot Defended",
+        "title": "# of the Robot Being Defended",
+        "type":"counter"
+      },
+      "Robot Defended": {
+        "code":"Robot Defended",
+        "title": "# of the Robot They Defended, if Any",
+        "type":"text",
+        "size":15,
+        "maxSize":20
       },
       "Intake Skill": {
         "code":"is",
