@@ -243,7 +243,7 @@ var config_data = `
         "title": "Comments",
         "type":"text",
         "size":15,
-        "maxSize":200
+        "maxSize":500
       }
     }
   }
