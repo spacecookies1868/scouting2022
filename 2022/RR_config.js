@@ -198,9 +198,9 @@ var config_data = `
         },
         "defaultValue":"n/a"
       },
-      "Defense Skill": {
+      "Own Defense Skill": {
         "code":"dr",
-        "title": "Own Defense Skill",
+        "title": "Defense Skill",
         "type":"radio",
         "choices":{
           "Affected Both Shooting and Intaking":"Pushed robot around, impeded both their intaking and shooting<br>",
@@ -217,9 +217,9 @@ var config_data = `
         "title": "# of the Robot Being Defended",
         "type":"counter"
       },
-      "Robot Defended": {
+      "Robot Defended, if Any": {
         "code":"Robot Defended",
-        "title": "# of the Robot They Defended, if Any",
+        "title": "Robot Defended",
         "type":"text",
         "size":15,
         "maxSize":20
@@ -236,7 +236,7 @@ var config_data = `
         },
         "defaultValue":"n/a"
       },
-     "Robot Movement": {
+     "Connection Issues": {
         "code":"rm",
         "title": "Connection Issues",
         "type":"radio",
