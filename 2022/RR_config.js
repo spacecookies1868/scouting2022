@@ -85,15 +85,15 @@ var config_data = `
         "title": "Lower Cargo Missed",
         "type":"counter"
       },
-       "Human Player Shot": {
-        "code":"hp",
-        "title": "Human Player Shot",
-        "type":"counter"
-      },
        "Taxi": {
         "code":"at",
         "title": "Taxied?",
         "type":"bool"
+      },
+       "Human Player Shot": {
+        "code":"hp",
+        "title": "Human Player Shot",
+        "type":"counter"
       },
        "Auto Path": {
         "code":"ap",
@@ -171,11 +171,14 @@ var config_data = `
         "title": "Stability",
         "type":"radio",
         "choices":{
-          "Sturdy":"Sturdy<br>",
-          "Swinging":"Swinging<br>",
-          "Barely On":"Barely On<br>",
-          "Failed":"Failed, on the ground in pieces<br>",
-          "n/a":"No Climb"
+          "Stable":"Stable<br>",
+          "Minor Swing":"Controlled or minor swing<br>",
+          "Wild Swing":"Wild swing<br>",
+          "Hit Driver Station":"Hit driver station wall<br>",
+          "Missed Rung":"Missed the next rung but didn't fall<br>",
+          "Fell Off Rung":"Fell off the rung<br>",
+          "Fell Off While Transitioning":"Fell off the rung when transitioning to higher rung<br>",
+          "n/a":"Not Attempted"
         },
         "defaultValue":"n/a"
       }
@@ -186,9 +189,10 @@ var config_data = `
         "title": "Avoiding Opponent Defense",
         "type":"radio",
         "choices":{
-          "Best":"Shooting was significantly affected<br>",
-          "Good":"Was slowed down<br>",
-          "Bad Affected":"Not Affected<br>",
+          "Both Shooting and Intaking Affected":"Both shooting and intaking were affected<br>",
+          "Shooting Affected":"Shooting was affected<br>",
+          "Intaking Affected":"Intaking was affected<br>",
+          "Not Affected":"Not affected, cycles were unchanged<br>",
           "n/a":"Did not get defended"
         },
         "defaultValue":"n/a"
@@ -198,10 +202,11 @@ var config_data = `
         "title": "Defense Skill",
         "type":"radio",
         "choices":{
-          "Best":"Pushed robot around a lot, affected shooting<br>",
-          "Good":"Slowed robot down<br>",
-          "Bad":"Not Effective<br>",
-          "n/a":"No defense"
+          "Affected Intake":"Pushed robot around, affected their intaking<br>",
+          "Affected Shooting":"Affected their shooting accuracy<br>",
+          "Slowed Them":"Slowed them down<br>",
+          "Ineffective":"Was ineffective<br>",
+          "n/a":"Did not play defense"
         },
         "defaultValue":"n/a"
       },
@@ -222,9 +227,9 @@ var config_data = `
         "title": "Robot Movement",
         "type":"radio",
         "choices":{
-          ">30 seconds":">30 seconds <br>",
-          "<30 seconds":"<30 seconds <br>",
           "Dead":"Dead <br>",
+          ">30":">30 seconds <br>",
+          "<30":"<30 seconds <br>",
           "n/a":"None"
         },
         "defaultValue":"n/a"
