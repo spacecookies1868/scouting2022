@@ -90,16 +90,16 @@ var config_data = `
         "title": "Human Player Shot",
         "type":"counter"
       },
+       "Taxi": {
+        "code":"at",
+        "title": "Taxied?",
+        "type":"bool"
+      },
        "Auto Path": {
         "code":"ap",
         "title": "Auto Path",
         "type":"field_image",
         "filename":"2022/field_image.png"
-      },
-       "Taxi": {
-        "code":"at",
-        "title": "Taxied?",
-        "type":"bool"
       }
     },
     "teleop": {
