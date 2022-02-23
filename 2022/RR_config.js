@@ -217,13 +217,14 @@ var config_data = `
         },
         "defaultValue":"n/a"
       },
-     "Connection Issues": {
-        "code":"ci",
-        "title": "Connection Issues",
+     "Robot Movement": {
+        "code":"rm",
+        "title": "Robot Movement",
         "type":"radio",
         "choices":{
-          "Significant":"Signficant (>30 sec) <br>",
-          "Slight":"Slight (<10 sec) <br>",
+          ">30 seconds":">30 seconds <br>",
+          "<30 seconds":"<30 seconds <br>",
+          "Dead":"Dead <br>",
           "n/a":"None"
         },
         "defaultValue":"n/a"
