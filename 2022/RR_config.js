@@ -238,7 +238,7 @@ var config_data = `
       },
      "Robot Movement": {
         "code":"rm",
-        "title": "Robot Movement",
+        "title": "Connection Issues",
         "type":"radio",
         "choices":{
           "Dead":"Dead <br>",
