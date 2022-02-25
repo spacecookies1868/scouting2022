@@ -212,11 +212,6 @@ var config_data = `
         },
         "defaultValue":"n/a"
       },
-       "Robot Defended": {
-        "code":"Robot Defended",
-        "title": "# of the Robot Being Defended",
-        "type":"counter"
-      },
       "Robot Defended, if Any": {
         "code":"Robot Defended",
         "title": "Robot Defended",
