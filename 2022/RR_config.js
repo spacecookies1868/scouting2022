@@ -153,19 +153,6 @@ var config_data = `
         "title": "Tandem Climb",
         "type":"bool"
       },
-      "Highest *Attempted* Climb": {
-        "code":"hac",
-        "title": "Highest *Attempted* Climb",
-        "type":"radio",
-        "choices":{
-          "Low":"Low<br>",
-          "Mid":"Mid<br>",
-          "High":"High<br>",
-          "Traversal":"Traversal<br>",
-          "n/a":"Not attempted"
-        },
-        "defaultValue":"n/a"
-      },
        "Ending Rung": {
         "code":"er",
         "title": "Ending Rung",
