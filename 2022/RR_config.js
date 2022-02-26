@@ -166,9 +166,9 @@ var config_data = `
         },
         "defaultValue":"n/a"
       },
-       "End Climb Bar": {
-        "code":"ecb",
-        "title": "End Climb Bar",
+       "Ending Rung": {
+        "code":"er",
+        "title": "Ending Rung",
         "type":"radio",
         "choices":{
           "Low":"Low<br>",
