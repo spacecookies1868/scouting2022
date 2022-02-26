@@ -226,7 +226,7 @@ var config_data = `
         "defaultValue":"n/a"
       },
       "Robot Defended, if Any": {
-        "code":"Robot Defended",
+        "code":"rd",
         "title": "Robot Defended",
         "type":"text",
         "size":15,
