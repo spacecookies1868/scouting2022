@@ -171,11 +171,11 @@ var config_data = `
         "title": "Ending Rung",
         "type":"radio",
         "choices":{
-          "Low":"Low<br>",
-          "Mid":"Mid<br>",
-          "High":"High<br>",
-          "Traversal":"Traversal<br>",
-          "n/a":"Not attempted"
+          "1 Low":"Low<br>",
+          "2 Mid":"Mid<br>",
+          "3 High":"High<br>",
+          "4 Traversal":"Traversal<br>",
+          "0 n/a":"Not attempted"
         },
         "defaultValue":"n/a"
       },
@@ -237,9 +237,9 @@ var config_data = `
         "title": "Intake Skill",
         "type":"radio",
         "choices":{
-          "Best":"Touch it, own it<br>",
-          "Good":"Missed a few<br>",
-          "Bad":"Struggled<br>",
+          "Got All":"Touch it, own it<br>",
+          "Missed a Few":"Missed a few<br>",
+          "Struggled":"Struggled<br>",
           "n/a":"Did not intake"
         },
         "defaultValue":"n/a"
