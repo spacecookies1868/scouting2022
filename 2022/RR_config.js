@@ -166,6 +166,19 @@ var config_data = `
         },
         "defaultValue":"n/a"
       },
+       "End Climb Bar": {
+        "code":"ecb",
+        "title": "End Climb Bar",
+        "type":"radio",
+        "choices":{
+          "Low":"Low<br>",
+          "Mid":"Mid<br>",
+          "High":"High<br>",
+          "Traversal":"Traversal<br>",
+          "n/a":"Not attempted"
+        },
+        "defaultValue":"n/a"
+      },
       "Stability": {
         "code":"stab",
         "title": "Stability",
