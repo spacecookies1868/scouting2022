@@ -90,11 +90,6 @@ var config_data = `
         "title": "Taxied?",
         "type":"bool"
       },
-       "Human Player Shot": {
-        "code":"hp",
-        "title": "Human Player Shot",
-        "type":"counter"
-      },
        "Auto Path": {
         "code":"ap",
         "title": "Auto Path",
@@ -123,18 +118,6 @@ var config_data = `
         "title": "Lower Cargo Missed",
         "type":"counter"
       },
-      "Cargo Loading": {
-        "code":"cl",
-        "title": "Pick up Cargo where",
-        "type":"radio",
-        "choices":{
-          "g":"Ground<br>",
-          "h":"Human Player<br>",
-          "b":"Both<br>",
-          "x":"Not Attempted"
-        },
-        "defaultValue":"g"
-      },
       "Shooting Spot": {
         "code":"ss",
         "title": "Shooting Spot",
@@ -143,10 +126,18 @@ var config_data = `
       }
     },
     "endgame": {
-      "Started Climb before Endgame": {
-        "code":"be",
-        "title": "Started climb before Endgame",
-        "type":"bool"
+       "Climb Start Time": {
+        "code":"cst",
+        "title": "Climb Start Time",
+        "type":"radio",
+        "choices":{
+          "Early":"Before Endgame Sound<br>",
+          "At":"Right At Endgame Sound<br>",
+          "Midway":"Midway Through Endgame<br>",
+          "End":"Very End of Endgame<br>",
+          "n/a":"Not attempted"
+        },
+        "defaultValue":"n/a"
       },
       "Tandem Climb": {
         "code":"tc",
@@ -182,6 +173,18 @@ var config_data = `
       }
     },
     "postmatch": {
+      "Cargo Loading": {
+        "code":"cl",
+        "title": "Pick up Cargo where",
+        "type":"radio",
+        "choices":{
+          "g":"Ground<br>",
+          "h":"Human Player<br>",
+          "b":"Both<br>",
+          "x":"Not Attempted"
+        },
+        "defaultValue":"g"
+      },
       "Avoiding Opponent Defense": {
         "code":"da",
         "title": "Avoiding Opponent Defense",
