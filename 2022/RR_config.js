@@ -131,10 +131,10 @@ var config_data = `
         "title": "Climb Start Time",
         "type":"radio",
         "choices":{
-          "Early":"Before Endgame Sound<br>",
-          "At":"Right At Endgame Sound<br>",
-          "Midway":"Midway Through Endgame<br>",
-          "End":"Very End of Endgame<br>",
+          "Early":"Before endgame sound<br>",
+          "At":"Right at endgame sound<br>",
+          "Midway":"Midway through endgame<br>",
+          "End":"Very end of endgame<br>",
           "n/a":"Not attempted"
         },
         "defaultValue":"n/a"
@@ -165,7 +165,7 @@ var config_data = `
           "Stable":"Stable<br>",
           "Swing":"Wild swing<br>",
           "Between":"Caught between two rungs<br>",
-          "Fell as Moving":"Fell off the rung when transitioning to higher rung<br>",
+          "Fell as Moving":"Fell off when moving to higher rung<br>",
           "Fell":"Fell off the rung<br>",
           "n/a":"Not attempted"
         },
