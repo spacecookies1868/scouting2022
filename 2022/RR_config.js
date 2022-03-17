@@ -145,7 +145,7 @@ var config_data = `
     "endgame": {
       "Started Climb before Endgame": {
         "code":"be",
-        "title": "Started climb before EndGame",
+        "title": "Started climb before Endgame",
         "type":"bool"
       },
       "Tandem Climb": {
@@ -167,17 +167,15 @@ var config_data = `
         "defaultValue":"n/a"
       },
       "Stability": {
-        "code":"stab",
+        "code":"sta",
         "title": "Stability",
         "type":"radio",
         "choices":{
           "Stable":"Stable<br>",
-          "Minor Swing":"Controlled or minor swing<br>",
-          "Wild Swing":"Wild swing<br>",
-          "Hit Driver Station":"Hit driver station wall<br>",
-          "Missed Rung":"Missed the next rung but didn't fall<br>",
-          "Fell Off While Transitioning":"Fell off the rung when transitioning to higher rung<br>",
-          "Fell Off Rung":"Fell off the rung<br>",
+          "Swing":"Wild swing<br>",
+          "Between":"Caught between two rungs<br>",
+          "Fell as Moving":"Fell off the rung when transitioning to higher rung<br>",
+          "Fell":"Fell off the rung<br>",
           "n/a":"Not attempted"
         },
         "defaultValue":"n/a"
@@ -189,11 +187,11 @@ var config_data = `
         "title": "Avoiding Opponent Defense",
         "type":"radio",
         "choices":{
-          "Both Shooting and Intaking Affected":"Both their shooting and intaking were affected<br>",
-          "Intaking Affected":"Intaking was affected<br>",
-          "Shooting Affected":"Shooting was affected<br>",
-          "Slowed Down":"Was just generally slowed down<br>",
-          "Not Affected":"Not affected, cycles were unchanged<br>",
+          "S&I":"Both their shooting and intaking were affected<br>",
+          "I":"Intaking was affected<br>",
+          "S":"Shooting was affected<br>",
+          "Slowed":"Was just generally slowed down<br>",
+          "Bad":"Not affected, cycles were unchanged<br>",
           "n/a":"Did not get defended"
         },
         "defaultValue":"n/a"
@@ -203,30 +201,23 @@ var config_data = `
         "title": "Defense Skill",
         "type":"radio",
         "choices":{
-          "Affected Both Shooting and Intaking":"Impeded opponent intaking and shooting<br>",
-          "Affected Intake":"Significantly affected intake cycles<br>",
-          "Affected Shooting":"Affected shooting accuracy<br>",
-          "Slowed Them":"Just slowed them down<br>",
-          "Ineffective":"Was ineffective<br>",
+          "S&I":"Impeded opponent intaking and shooting<br>",
+          "I":"Significantly affected intake cycles<br>",
+          "S":"Affected shooting accuracy<br>",
+          "Slowed":"Just slowed them down<br>",
+          "Bad":"Was ineffective<br>",
           "n/a":"Did not play defense"
         },
         "defaultValue":"n/a"
-      },
-      "Robot Defended, if Any": {
-        "code":"rd",
-        "title": "Robot Defended",
-        "type":"text",
-        "size":15,
-        "maxSize":20
       },
       "Intake Skill": {
         "code":"is",
         "title": "Intake Skill",
         "type":"radio",
         "choices":{
-          "Got All":"Touch it, own it<br>",
-          "Missed a Few":"Missed a few<br>",
-          "Struggled":"Struggled<br>",
+          "Great":"Touch it, own it<br>",
+          "Mid":"Missed a few<br>",
+          "Bad":"Struggled<br>",
           "n/a":"Did not intake"
         },
         "defaultValue":"n/a"
@@ -257,7 +248,7 @@ var config_data = `
         "code":"co",
         "title": "Comments",
         "type":"text",
-        "size":15,
+        "size":20,
         "maxSize":500
       }
     }
