@@ -178,10 +178,10 @@ var config_data = `
         "title": "Pick up Cargo where",
         "type":"radio",
         "choices":{
-          "g":"Ground<br>",
-          "h":"Human Player<br>",
-          "b":"Both<br>",
-          "x":"Not Attempted"
+          "G":"Ground<br>",
+          "H":"Human Player<br>",
+          "B":"Both<br>",
+          "n/a":"Not Attempted"
         },
         "defaultValue":"g"
       },
