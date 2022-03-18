@@ -153,6 +153,7 @@ var config_data = `
           "2 M":"Mid<br>",
           "3 H":"High<br>",
           "4 T":"Traversal<br>",
+          "0 F": "Attempted but Failed<br>",
           "0 n/a":"Not attempted"
         },
         "defaultValue":"n/a"
