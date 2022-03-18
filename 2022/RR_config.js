@@ -149,10 +149,10 @@ var config_data = `
         "title": "Ending Rung",
         "type":"radio",
         "choices":{
-          "1 Low":"Low<br>",
-          "2 Mid":"Mid<br>",
-          "3 High":"High<br>",
-          "4 Traversal":"Traversal<br>",
+          "1 L":"Low<br>",
+          "2 M":"Mid<br>",
+          "3 H":"High<br>",
+          "4 T":"Traversal<br>",
           "0 n/a":"Not attempted"
         },
         "defaultValue":"n/a"
