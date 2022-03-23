@@ -14,7 +14,7 @@ var config_data = `
       "Event":{
         "code":"e",
         "type":"event",
-        "defaultValue":"2022caoc",
+        "defaultValue":"2022camb",
         "required":"true",
         "disabled":"true"
       },
