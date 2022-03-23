@@ -153,10 +153,10 @@ var config_data = `
           "2 M":"Mid<br>",
           "3 H":"High<br>",
           "4 T":"Traversal<br>",
-          "0 F": "Attempted but Failed<br>",
+          "0 F": "Attempted but failed<br>",
           "0 n/a":"Not attempted"
         },
-        "defaultValue":"n/a"
+        "defaultValue":"0 n/a"
       },
       "Stability": {
         "code":"sta",
@@ -171,7 +171,6 @@ var config_data = `
           "n/a":"Not attempted"
         },
         "defaultValue":"n/a"
-      }
     },
     "postmatch": {
       "Cargo Loading": {
@@ -180,11 +179,11 @@ var config_data = `
         "type":"radio",
         "choices":{
           "G":"Ground<br>",
-          "H":"Human Player<br>",
+          "H":"Human player<br>",
           "B":"Both<br>",
-          "n/a":"Not Attempted"
+          "n/a":"Not attempted"
         },
-        "defaultValue":"g"
+        "defaultValue":"G"
       },
       "Avoiding Opponent Defense": {
         "code":"da",
