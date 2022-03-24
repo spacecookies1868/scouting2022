@@ -169,8 +169,9 @@ var config_data = `
           "Fell as Moving":"Fell off when moving to higher rung<br>",
           "Fell":"Fell off the rung<br>",
           "n/a":"Not attempted"
-        },
+          },
         "defaultValue":"n/a"
+        }
     },
     "postmatch": {
       "Cargo Loading": {
