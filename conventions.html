@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'> -->
+    <link rel="stylesheet" href="css/inter.css" />
+    <link
+      rel="stylesheet"
+      href="css/main.css"
+    />
+
+    <title>1868 Programming Resources</title>
+
+
+  </head>
+  <body>
+
+    <!-- SIDEBAR -->
+
+    <div class="sidenav">
+
+    
+      <a href="index.html">Home</a>
+      <a href="conventions.html">Conventions</a>
+      <a href="mac_env.html">Setting Up a Programming Environment Mac</a>
+
+    </div>
+    <div class="header">
+      <h1 id="title"; align="center">Space Cookies Team 1868
+        <br/>
+        <div class="cooltext">Programming Resources</div></h1>
+    </div>
+    <div class="main">
+
+        <h2>Coding Conventions</h2>
+        <h3>Naming</h3>
+        <p>Camel case is how we name <b>variables</b>, because it makes names easier to read. The first letter is lower case, and the first letter of every word after is uppercase.</p>
+        <ul>
+            <li>this is camelCase: <tt>myVariable</tt></li>
+            <li>this is not: <tt>MyVariable, MYvArIaBlE, myvariable, my_variable</tt></li>
+        </ul>
+
+
+        <p>Please do not create excessively long names, but also not too short to be vague.</p>
+        <ul>
+            <li>this is ok: <tt>timeSinceLastRun, rightMotor, chiliPineapplePizza</tt></li>
+            <li>this is not: <tt>time, timeSinceStartOfLastRun, motor, chiliPineapplePizzaWithExtraCheese</tt></li>
+        </ul>
+
+
+        <p>Enums all start with <tt>k</tt>, like <tt>kIntakeUp</tt> and <tt>kIntakeDown</tt> instead of <tt>intakeUp</tt> and <tt>intakeDown</tt>.</p>
+
+        <p>Class variables all start with a <tt>_</tt>, and are defined in the <tt>.h</tt> file. For example, <tt>_leftJoy</tt> and not <tt>leftJoy</tt>.</p>
+
+        <p><b>Constants:</b> keep in all capital letters</p>
+        <ul>
+            <li>for example, <tt>INTAKE_MOTOR_PORT</tt>, not <tt>intakePort</tt> or <tt>intake_motor_port</tt> or <tt>intakemotorport</tt></li>
+            <li>constants should all be defined in the <tt>PORTS.h</tt> file.</li>
+        </ul>
+
+        <h3>Brackets and Indentation</h3>
+        <p>An extra enter is not needed before the opening bracket, this just makes the code needlessly longer. Add another tab within every bracket (if adding an if statement in an if statement, the inside of the second if statement should have 2 tabs).</p>
+
+        <pre><code><tt>
+        if (true) { //correct
+            //insert code here;
+        }
+
+        if (true) //wrong
+        {
+            //insert code here;
+        }
+        </tt></code></pre>
+        
+
+
+        <h3>Miscellaneous</h3>
+        <p>For loops: use <tt>i</tt> as the name of the counter variable, then <tt>j</tt> then <tt>k</tt> afterwards, etc.</p>
+
+        <p>Spacing: put spaces between operators</p>
+        <ul>
+            <li>Enter after each statement</li>
+            <li><tt>int a = 10;</tt> instead of <tt>int a=10;</tt></li>
+        </ul>
+
+
+  </body>
+
+
+</html>

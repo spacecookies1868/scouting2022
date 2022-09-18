@@ -1,91 +1,46 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, maximum-scale=1.0">
-		<title>Scouting PASS</title>
-		<script src="resources/js/easy.qrcode.min.js"></script>
-		<script src="resources/js/TBAInterface.js"></script>
-		<script src="resources/js/scoutingPASS.js"></script>
-		<script src="2022/RR_config.js"></script>
-		<link rel="stylesheet" href="resources/css/scoutingPASS.css">
-	</head>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'> -->
+    <link rel="stylesheet" href="css/inter.css" />
+    <link
+      rel="stylesheet"
+      href="css/main.css"
+    />
 
-	<body>
-		<form id="scoutingForm" onsubmit="return false">
-			<div id="main-panel-holder">
-				<div id="prematch" class="main-panel">
-					<h1 class="page_title"><span class="odd">P</span><span class="even">W</span><span class="odd">N</span><span class="even">A</span><span class="odd">G</span><span class="even">E</span><br>Scouting 2020</h1>
-					<h2>Pre-Match</h2>
-					<p class="match-label"><input type="button" value="Next" onclick="swipePage(1)"></p>
-					<table id="prematch_table">
-					<!-- ###PRE-MATCH-COMPONENTS###-->
-					</table>
-					<p class="match-label"><input type="button" value="Next" onclick="swipePage(1)"></p>
-				</div>
+    <title>1868 Programming Resources</title>
 
-				<div id="auton" class="main-panel" style="background-color: #70bceb;"> 
-					<h1 class="page_title"><span class="odd">P</span><span class="even">W</span><span class="odd">n</span><span class="even">A</span><span class="odd">G</span><span class="even">E</span><br>Scouting 2020</h1>
-					<h2>Auton</h2>
-					<p class="match-label"><input type="button" value="Prev" onclick="swipePage(-1)"> <input type="button" value="Next" onclick="swipePage(1)"></p>
-					<table id="auton_table">
-					<!-- ###AUTON-COMPONENTS###-->
-					</table>
-					<p class="match-label"><input type="button" value="Prev" onclick="swipePage(-1)"> <input type="button" value="Next" onclick="swipePage(1)"></p>
-				</div>
 
-				<div id="teleop" class="main-panel" style="background-color: #599dd6;">
-					<h1 class="page_title"><span class="odd">P</span><span class="even">W</span><span class="odd">n</span><span class="even">A</span><span class="odd">G</span><span class="even">E</span><br>Scouting 2020</h1>
-					<h2>Teleop</h2>
-					<p class="match-label"><input type="button" value="Prev" onclick="swipePage(-1)"><input type="button" value="Next" onclick="swipePage(1)"></p>
-					<table id="teleop_table">
-						<!-- ###TELEOP-COMPONENTS###-->
-					</table>
-					<p class="match-label"><input type="button" value="Prev" onclick="swipePage(-1)"> <input type="button" value="Next" onclick="swipePage(1)"></p>
-				</div>
+  </head>
+  <body>
 
-				<div id="endgame" class="main-panel" style="background-color: #4a7dbf;">
-					<h1 class="page_title"><span class="odd">P</span><span class="even">W</span><span class="odd">n</span><span class="even">A</span><span class="odd">G</span><span class="even">E</span><br>Scouting 2020</h1>
-					<h2>Endgame</h2>
-					<p class="match-label"><input type="button" value="Prev" onclick="swipePage(-1)"><input type="button" value="Next" onclick="swipePage(1)"></p>
-					<table id="endgame_table">
-						<!-- ###ENDGAME-COMPONENTS###-->
-					</table>
-					<p class="match-label"><input type="button" value="Prev" onclick="swipePage(-1)"> <input type="button" value="Next" onclick="swipePage(1)"></p>
-				</div>
+    <!-- SIDEBAR -->
 
-				<div id="post-match" class="main-panel" style="background-color: #435ea6;">
-					<h1 class="page_title"><span class="odd">P</span><span class="even">W</span><span class="odd">n</span><span class="even">A</span><span class="odd">G</span><span class="even">E</span><br>Scouting 2020</h1>
-					<h2>Miscellaneous</h2>
-					<p class="match-label"><input type="button" value="Prev" onclick="swipePage(-1)"><input type="button" value="Next" onclick="swipePage(1)"></p>
-					<table id="postmatch_table">
-						<!-- ###POST-MATCH-COMPONENTS###-->
-					</table>
-					<p class="match-label"><input type="button" value="Prev" onclick="swipePage(-1)"> <input type="button" value="Next" onclick="swipePage(1)"></p>
-				</div>
+    <div class="sidenav">
 
-				<div id="qr-code" class="main-panel">
-					<h1 class="page_title"><span class="odd">P</span><span class="even">W</span><span class="odd">n</span><span class="even">A</span><span class="odd">G</span><span class="even">E</span><br>Scouting 2020</h1>
-					<h2>Generate QR Code</h2>
-					<p class="match-label"><input type="button" value="Prev" onclick="swipePage(-1)"></p>
-					<p id="qr-info"><span id="display_qr-info" style="border: none; text-align: center;"></span></p>
-					<table id="qr-table"><tr><td width="5%">&nbsp;</td><td width="90%">
-						<div id="qrcode" style="text-align:center">
-							<script>
-						// Create QRCode Object
-								qr = new QRCode(document.getElementById("qrcode"), options)
-					</script>
-					</div>
-						
-						
-				</td><td width="5%">&nbsp;</td></tr></table>
-					<p></p>
-					<div id="clearButton">
-						<button type="button" onclick="clearForm()">Clear Form</button>
-					</div>
-					<br>
-				</div>
-			</div>
-		</body>
-	</form>
+    
+      <a href="index.html">Home</a>
+      <a href="conventions.html">Conventions</a>
+      <a href="mac_env.html">Setting Up a Programming Environment Mac</a>
+
+    </div>
+    <div class="header">
+      <h1 id="title"; align="center">Space Cookies Team 1868
+        <br/>
+        <div class="cooltext">Programming Resources</div></h1>
+    </div>
+    <div class="main">
+
+  
+
+      <h2>Here is all of our prog resources!</h2>
+      <p>
+        Maybe not everything has been migrated so see the <a href="https://github.com/team1868/1868wiki/wiki">programming wiki</a> on github.
+      </p>
+    
+
+  </body>
+
+
 </html>

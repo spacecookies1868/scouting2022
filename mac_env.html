@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'> -->
+    <link rel="stylesheet" href="css/inter.css" />
+    <link
+      rel="stylesheet"
+      href="css/main.css"
+    />
+
+    <title>1868 Programming Resources</title>
+
+
+  </head>
+  <body>
+
+    <!-- SIDEBAR -->
+
+    <div class="sidenav">
+
+    
+      <a href="index.html">Home</a>
+      <a href="conventions.html">Conventions</a>
+      <a href="mac_env.html">Setting Up a Programming Environment Mac</a>
+
+    </div>
+    <div class="header">
+      <h1 id="title"; align="center">Space Cookies Team 1868
+        <br/>
+        <div class="cooltext">Programming Resources</div></h1>
+    </div>
+    <div class="main">
+
+        <h2>Setting Up a Programming Environment Mac (2022 Fall)</h2>
+        <p>These are the MacOS instructions. If you get stuck, ping the programming slack channel and include the log.txt file that if there are script failures. <b>PLEASE ATTEMPT TO INSTALL AT HOME AND AT LEAST DOWNLOAD THE <a href="https://drive.google.com/drive/folders/1ATLH8ThujsxCRlkLSCcgYVKoJcTqe1xu"><tt>FRCLibResoures2022Mac.zip</tt></a> BEFORE COMING TO LAB. DO NOT WAIT UNTIL THE LAST MINUTE!</b> It may take 2-3 hours.</p>
+
+        <p>Before starting:</p>
+        <ul>
+            <li>Save and close other application work (installation may require restarting computer)</li>
+            <li>Connect to good wifi (LAB WIFI IS NOT GOOD WIFI)</li>
+        </ul>
+
+        <p>This instruction set will install the 2022 resources for:</p>
+        <ul>
+            <li>VSCode with WPILib</li>
+            <li>NavX Library from KauaiLabs</li>
+            <li>Phoenix Library from CTRE</li>
+            <li>Spark Max software from Rev Robotics</li>
+            <li>PhotonVision resources</li>
+        </ul>   
+
+        <p>Additionally, the following command line and version control utilities will also be installed:</p>
+        <ul>
+            <li>git</li>
+            <li>clang-format</li>
+            <li>pre-commit</li>
+            <li>unzip</li>
+        </ul>
+
+        <h3>Initial instructions (Bare minimum before lab)</h3>
+        <ul>
+            <li>Download and unzip <a href="https://drive.google.com/drive/folders/1ATLH8ThujsxCRlkLSCcgYVKoJcTqe1xu"><tt>FRCLibResoures2022Mac.zip</tt></a></li>
+            <li>There now should be a folder with necessary resources at <tt>~/Downloads/FRCLibResoures2022Mac</tt>.</li>
+        </ul>
+
+
+        <h3>VSCode & WPILIB</h3>
+        <p>Installs <tt>WPILib 2022.4.1</tt> with <tt>VSCode 1.63.2</tt>.</p>
+        <ol>
+            <li>In <tt>~/Downloads/FRCLibResoures2022Mac</tt>, open <tt>WPILib_macOS-2022.4.1.dmg</tt> to mount the installer</li>
+            <li>Open the <tt>WPILibInstaller</tt></li>
+            <li>Inside the installer</li>
+            <ul>
+                <li>Select <tt>Start</tt></li>
+                <li>Select <tt>Install for this User</tt></li>
+                <li>Select <tt>Select existing VS Code zip for offline install on this computer</tt> and in the pop up file selection window choose <tt>WPILib-VSCode-1.63.2.zip</tt> found in the <tt>~/Downloads/FRCLibResoures2022Mac</tt> directory.</li>
+                <img src="https://cdn.discordapp.com/attachments/667908923226849288/1019643621655457882/vscode.png" width="50%">
+            </ul>
+            
+            <li>Click Finish and move the shortcut to the dock.</li>
+        </ol>
+
+        
+
+
+        <h3>Install Xcode</h3>
+        <ol>
+            <li>Navigate to <a href="https://apps.apple.com/us/app/xcode/id497799835">Xcode Developer Tools in the app store</a></li>
+            <li>Follow the App Store instructions to install Xcode Developer Tools</li>
+        </ol>
+
+        <h3>3rd party WPILib libraries</h3>
+        <ol>
+            <li>Open a terminal</li>
+            <li>Navigate to the unzipped and downloaded resources</li>
+            <code><tt>cd ~/Downloads/FRCLibResoures2022Mac</tt></code>
+            <li>Run the install script</li>
+            <code><tt>./frc_install.sh</tt></code>
+
+            <img src="https://cdn.discordapp.com/attachments/667908923226849288/1019643621370253442/bash.png" width="100%">
+        </ol>
+
+
+
+
+        <h3>Install VSCode plugins</h3>
+        <ol>
+            <li>Open VSCode</li>
+            <li>Select <tt>Extensions</tt> from the left navigation bar</li>
+            <img src="https://cdn.discordapp.com/attachments/667908923226849288/1019642563751313408/extensions.png" width="10%">
+            <li>Search for <tt>xaver.clang-format</tt></li>
+            <li>Install the <tt>Clang-Format</tt> extension</li>
+            <img src="https://cdn.discordapp.com/attachments/667908923226849288/1019642109143298118/clang_format.png" width="50%">
+        </ol>
+
+
+  </body>
+
+
+</html>

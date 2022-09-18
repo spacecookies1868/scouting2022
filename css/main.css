@@ -1,0 +1,573 @@
+/**
+ * Minified by jsDelivr using clean-css v4.2.1.
+ * Original file: /npm/@exampledev/new.css@1.1.2/new.css
+ *
+ * Do NOT use SRI with dynamically generated files! More information: https://www.jsdelivr.com/using-sri-with-dynamic-files
+ */
+ :root {
+  --white-color: #ffffff;
+  --primary-color: #ffb0b9;
+  --secondary-color: #ed6f6f;
+  --section-bg-color: #f0f8ff;
+  --dark-color: #000000;
+  --navbar-bg-color: #bb3862;
+  --p-color: #717275;
+  --highlight-icon-color: #ff0100;
+  --bahsel-red: #bc3462;
+  --bluege: #2e61b3;
+  --purplege: #a677e0;
+  --violetge: #a48ee6;
+  --bahsel-gray: #303030;
+  --bahsel-light: #ffeee6;
+  --bahsel-lightish: #f5c6bc;
+  --text-color: #52200c;
+}
+ :root {
+    --nc-font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif,
+      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    --nc-font-mono: Consolas, monaco, "Ubuntu Mono", "Liberation Mono",
+      "Courier New", Courier, monospace;
+    --nc-tx-1: #000000;
+    --nc-tx-2: #1a1a1a;
+    --nc-bg-1: #ffffff;
+    --nc-bg-2: #f6f8fa;
+    --nc-bg-3: #e5e7eb;
+    --nc-lk-1: #0070f3;
+    --nc-lk-2: #0366d6;
+    --nc-lk-tx: #ffffff;
+    --nc-ac-1: #a6dbf5;
+    --nc-ac-tx: #0c4047;
+  }
+  /* @media (prefers-color-scheme: dark) {
+    :root {
+      --nc-tx-1: #ffffff;
+      --nc-tx-2: #eeeeee;
+      --nc-bg-1: #000000;
+      --nc-bg-2: #111111;
+      --nc-bg-3: #222222;
+      --nc-lk-1: #3291ff;
+      --nc-lk-2: #0070f3;
+      --nc-lk-tx: #ffffff;
+      --nc-ac-1: #7928ca;
+      --nc-ac-tx: #ffffff;
+    }
+  } */
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  address,
+  area,
+  article,
+  aside,
+  audio,
+  blockquote,
+  datalist,
+  details,
+  dl,
+  fieldset,
+  figure,
+  form,
+  iframe,
+  img,
+  input,
+  meter,
+  nav,
+  ol,
+  optgroup,
+  option,
+  output,
+  p,
+  pre,
+  progress,
+  ruby,
+  section,
+  table,
+  textarea,
+  ul,
+  video {
+    margin-bottom: 1rem;
+  }
+  button,
+  html,
+  input,
+  select {
+    font-family: Georgia, serif;;
+  }
+  body {
+    margin: 0 auto;
+    max-width: 100%;
+    padding: 0px;
+    border-radius: 6px;
+    overflow-x: hidden;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    background: #a6dbf5;
+    color: var(--bluege);
+    font-size: 1.03rem;
+    line-height: 1.5;
+  }
+  ::selection {
+    background: var(--nc-ac-1);
+    color: var(--nc-ac-tx);
+  }
+  h3,
+  h4,
+  h5,
+  h6 {
+    line-height: 1;
+    color: var(--bluege);
+    padding-top: 0.875rem;
+  }
+  h3 {
+    color: var(--bluege);
+    padding-bottom: 2px;
+    margin-bottom: 8px;
+    /* border-bottom: 1px solid var(--nc-bg-2); */
+  }
+  h4,
+  h5,
+  h6 {
+    margin-bottom: 0.3rem;
+  }
+  h1 {
+    color:#ffffff;
+    font-size: 2.25rem;
+    
+  }
+  h2 {
+    font-size: 1.85rem;
+  }
+  h3 {
+    font-size: 1.55rem;
+  }
+  h4 {
+    font-size: 1.25rem;
+  }
+  h5 {
+    font-size: 1rem;
+  }
+  h6 {
+    font-size: 0.875rem;
+  }
+  a {
+    color: var(--violetge);
+  }
+  a:hover {
+    color: var(--bluege);
+    text-decoration: underline;
+  }
+  abbr:hover {
+    cursor: help;
+  }
+  blockquote {
+    padding: 1.5rem;
+    background: var(--nc-bg-2);
+    border-left: 5px solid var(--nc-bg-3);
+  }
+  abbr {
+    cursor: help;
+  }
+  blockquote :last-child {
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+  header {
+    background: var(--nc-bg-2);
+    border-bottom: 1px solid var(--nc-bg-3);
+    padding: 2rem 1.5rem;
+    margin: -2rem calc(0px - (50vw - 50%)) 2rem;
+    padding-left: calc(50vw - 50%);
+    padding-right: calc(50vw - 50%);
+  }
+  header h3 {
+    padding-bottom: 0;
+    border-bottom: 0;
+  }
+  header > :first-child {
+    margin-top: 0;
+    padding-top: 0;
+  }
+  header > :last-child {
+    margin-bottom: 0;
+  }
+  a button,
+  button,
+  input[type="button"],
+  input[type="reset"],
+  input[type="submit"] {
+    font-size: 1rem;
+    display: inline-block;
+    padding: 6px 12px;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    background: var(--nc-lk-1);
+    color: var(--nc-lk-tx);
+    border: 0;
+    border-radius: 4px;
+    box-sizing: border-box;
+    cursor: pointer;
+    color: var(--nc-lk-tx);
+  }
+  a button[disabled],
+  button[disabled],
+  input[type="button"][disabled],
+  input[type="reset"][disabled],
+  input[type="submit"][disabled] {
+    cursor: default;
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  .button:focus,
+  .button:hover,
+  button:focus,
+  button:hover,
+  input[type="button"]:focus,
+  input[type="button"]:hover,
+  input[type="reset"]:focus,
+  input[type="reset"]:hover,
+  input[type="submit"]:focus,
+  input[type="submit"]:hover {
+    background: var(--nc-lk-2);
+  }
+  code,
+  kbd,
+  pre,
+  samp {
+    font-family: Georgia, serif;
+  }
+  code,
+  kbd,
+  pre,
+  samp {
+    background: var(--nc-bg-2);
+    border: 1px solid var(--nc-bg-3);
+    border-radius: 4px;
+    padding: 3px 6px;
+    font-size: 0.9rem;
+  }
+  kbd {
+    border-bottom: 3px solid var(--nc-bg-3);
+  }
+  pre {
+    padding: 1rem 1.4rem;
+    max-width: 100%;
+    overflow: auto;
+  }
+  pre code {
+    background: inherit;
+    font-size: inherit;
+    color: inherit;
+    border: 0;
+    padding: 0;
+    margin: 0;
+  }
+  code pre {
+    display: inline;
+    background: inherit;
+    font-size: inherit;
+    color: inherit;
+    border: 0;
+    padding: 0;
+    margin: 0;
+  }
+  details {
+    padding: 0.6rem 1rem;
+    background: var(--nc-bg-2);
+    border: 1px solid var(--nc-bg-3);
+    border-radius: 4px;
+  }
+  summary {
+    cursor: pointer;
+    font-weight: 700;
+  }
+  details[open] {
+    padding-bottom: 0.75rem;
+  }
+  details[open] summary {
+    margin-bottom: 6px;
+  }
+  details[open] > :last-child {
+    margin-bottom: 0;
+  }
+  dt {
+    font-weight: 700;
+  }
+  dd::before {
+    content: "→ ";
+  }
+  hr {
+    border: 0;
+    border-bottom: 1px solid var(--nc-bg-3);
+    margin: 1rem auto;
+  }
+  fieldset {
+    margin-top: 1rem;
+    padding: 2rem;
+    border: 1px solid var(--nc-bg-3);
+    border-radius: 4px;
+  }
+  legend {
+    padding: auto 0.5rem;
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  td,
+  th {
+    border: 0px solid var(--nc-bg-3);
+    text-align: left;
+    padding: 0.5rem;
+    /* color: var(--text-color); */
+    color: white;
+  }
+  /*th{background:var(--nc-bg-2)}tr:nth-child(even){background:var(--nc-bg-2)}*/
+  table caption {
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+  textarea {
+    max-width: 100%;
+  }
+  ol,
+  ul {
+    padding-left: 2rem;
+  }
+  li {
+    margin-top: 0.4rem;
+    /* color: var(--text-color); */
+    color: var(--bluege);
+  }
+  ol ol,
+  ol ul,
+  ul ol,
+  ul ul {
+    margin-bottom: 0;
+  }
+  mark {
+    padding: 3px 6px;
+    background: var(--nc-ac-1);
+    color: var(--nc-ac-tx);
+  }
+  input,
+  select,
+  textarea {
+    padding: 6px 12px;
+    margin-bottom: 0.5rem;
+    background: var(--nc-bg-2);
+    color: var(--nc-tx-2);
+    border: 1px solid var(--nc-bg-3);
+    border-radius: 4px;
+    box-shadow: none;
+    box-sizing: border-box;
+  }
+  img {
+    max-width: 100%;
+  }
+  /*# sourceMappingURL=/sm/4a51164882967d28a74fabce02685c18fa45a529b77514edc75d708f04dd08b9.map */
+  
+  
+  
+  .oswald {
+    font-family: Georgia, serif;
+  }
+  .bahselred {
+    color: #bc3462;
+  }
+
+  .cooltext {
+    color: #a48ee6;
+  }
+
+  .cooltext a {
+    color: #a48ee6;
+  }
+  
+  .bahselorange {
+    color: #ff887c;
+  }
+  
+  .bahselmiddle {
+    color: #dd5f6e;
+  }
+  
+  .league {
+    color: var(--league);
+  }
+  
+  .valorant {
+    color: var(--valorant);
+  }
+  
+  .clashroyale {
+    color: var(--clash-royale);
+  }
+  
+  .minecraft {
+    color: var(--minecraft);
+  }
+  
+  .overwatch {
+    color: #EE941E;
+  }
+  
+  title {
+    display: none;
+  }
+  
+  h1 {
+    font-family: Georgia, serif;
+    font-size: 40px;
+    text-align: center;
+    
+  }
+  
+  h2 {
+    font-family: Georgia, serif;
+    font-size: 30px;
+    color: var(--bluege);
+    padding-bottom: 2px;
+    margin-bottom: 8px;
+    border-bottom: 3px solid var(--bluege);
+  }
+  
+  p {
+    font-size: 18px;
+    /* color: var(--text-color); */
+    color: var(--bluege);
+  }
+  
+  a:link {
+    color: var(--violetge);
+    text-decoration: none;
+  }
+  
+  /* a:visited {
+    color: var(--bluege);
+  }
+   */
+  a:hover {
+    color: var(--bluege);
+    text-decoration: underline;
+  }
+  
+  /* a:active {
+    color: var(--bluege);
+  }
+   */
+  .pagelink a {
+    color: var(--violetge);
+  }
+  /* .pagelink a:visited {
+    color: var(--bluege);
+  } */
+  
+  .pagelink a:hover {
+    color: var(--bluege);
+    padding-left: 30px;
+  }
+  
+  /* .pagelink a:active {
+    color: var(--bluege); */
+  /* } */
+  
+  .sidenav {
+    height: 80%; /* Full-height: remove this if you want "auto" height */
+    width: 15%; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 30%; /* Stay at the top */
+    left: 0;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding: 16px;
+    color: var(--bluege);
+  
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding-left: 0px;
+    /* padding: 6px 8px 6px 16px; */
+    text-decoration: none;
+    font-size: 18px;
+    /* color: #818181; */
+    display: block;
+    color: var(--violetge);
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    padding-left: 10px;
+    color: var(--bluege);
+  }
+  
+  .main {
+    margin-left: 240px;
+    margin-top: 50px;
+    padding-top: 25px;
+    padding-left: 25px;
+    padding: 0px 10px;
+    max-width: 80%;
+    /* background:var(--bahsel-light); */
+    background: #a6dbf5;
+  }
+  
+  .footer {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-left: -10em;
+    margin-right: -10em;
+    width: 200%;
+    max-width: 100%;
+    /* height: 240; */
+    background: var(--bluege);
+    font-size: 25px;
+    color: white;
+    border-bottom: 1px solid var(--nc-bg-3);
+    padding: 2rem 1.5rem;
+    margin-left: -2rem calc(0px - (50vw - 50%)) 2rem;
+    margin-right: -2rem calc(0px - (50vw - 50%)) 2rem;
+    /* padding-left: calc(50vw - 50%);
+    padding-right: calc(50vw - 50%); */
+    
+  }
+  
+  .footer a {
+    text-decoration:underline;
+    color: white;
+  }
+  
+  .footer a:hover {
+    text-decoration:underline;
+    /* color: var(--purplege); */
+  }
+  
+  #tourneyTable table {
+    border: none;
+  }
+  
+  .right {
+    float: right;
+  }
+  
+  .left {
+    float: left;
+  }
+  
+  .header {
+    /* margin-left: 240px; */
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-image: url("https://cdn.discordapp.com/attachments/667908923226849288/1020926890111946813/unknown.png");
+    background-size: cover;
+    /* background-color: var(--bluege); */
+    align-items: center;
+  }
+  
